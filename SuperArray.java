@@ -18,7 +18,7 @@ APCS1 pd5
 HW #42: Array of Titanium
 2015-12-06
  */
-public class SuperArray implements ListInt  {
+public class SuperArray  {
  
     //~~~~~INSTANCE VARS~~~~~
     //underlying container, or "core" of this data structure:
@@ -142,7 +142,7 @@ public class SuperArray implements ListInt  {
     //main method for testing
     public static void main( String[] args ) 
     {
-	ListInt s = new SuperArray();
+	SuperArray s = new SuperArray();
 	SuperArray curtis = (SuperArray)s;
 	System.out.println("Printing empty SuperArray curtis...");
 	System.out.println(curtis);
@@ -166,7 +166,7 @@ public class SuperArray implements ListInt  {
 	System.out.println(curtis);
 
 
-	ListInt mayfield = new SuperArray();
+	SuperArray mayfield = new SuperArray();
 	System.out.println("Printing empty SuperArray mayfield...");
 	System.out.println(mayfield);
 

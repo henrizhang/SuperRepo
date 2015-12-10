@@ -158,6 +158,9 @@ public class Hexadecimal {
       =============================================*/
     public boolean equals( Object other ) { 
 	/****** YOUR IMPLEMENTATION HURRR ******/
+	if ( (other==null || this==null ) ) {
+	throw new NullPointerException("NullPointerException, why they null tho?");
+	}
 	return ((this._decNum==((Hexadecimal)other)._decNum)||(((Hexadecimal)other)==this));//typecast to Binary to be able to compare instance vars 
        }
 
@@ -168,13 +171,16 @@ public class Hexadecimal {
       post: Returns 0 if this Object is equal to the input Object,
       negative integer if this<input, positive integer otherwise
       =============================================*/
-    public int compareTo( Object other ) {
+    public int compareTo( Object o) {
+	if ( (o==null || this==null ) ) {
+	throw new NullPointerException("NullPointerException, why they null tho?");
+	}
 	/****** YOUR IMPLEMENTATION HURRR ******/
-	if (this.equals(other)){
+	if (this.equals(o)){
 	    //calling above method
 	    return 0;
 	}
-	if (this._decNum>((Hexadecimal)other)._decNum){
+	if (this._decNum>((Hexadecimal)o)._decNum){
 	    //typecast to Binary to be able to compare instance vars 
 	    return (1);
 	}

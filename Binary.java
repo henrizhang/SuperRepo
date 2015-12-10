@@ -6,7 +6,7 @@
 
 //skeleton file for class Binary
 
-public class Binary {
+public class Binary implements Comparable{
 
     private int _decNum;
     private String _binNum;
@@ -162,13 +162,13 @@ public class Binary {
       post: Returns 0 if this Object is equal to the input Object,
       negative integer if this<input, positive integer otherwise
       =============================================*/
-    public int compareTo( Object other ) {
+    public int compareTo( Object o ) {
 	/****** YOUR IMPLEMENTATION HURRR ******/
-	if (this.equals(other)){
+	if (this.equals(o)){
 	    //calling above method
 	    return 0;
 	}
-	if (this._decNum>((Binary)other)._decNum){
+	if (this._decNum>((Binary)o)._decNum){
 	    //typecast to Binary to be able to compare instance vars 
 	    return (1);
 	}
